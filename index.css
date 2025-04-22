@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Glory";
+  src: url("/Glory.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/Roboto.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("/RobotoMono.ttf");
+}
+
+::view-transition-old(frequency-calculator),
+::view-transition-new(frequency-calculator) {
+  height: 100%;
+}
+
+/*
+::view-transition-group(*) {
+  animation-duration: 0.25s;
+}
+*/
