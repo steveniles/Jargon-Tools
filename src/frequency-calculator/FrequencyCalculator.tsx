@@ -25,7 +25,7 @@ export default function FrequencyCalculator() {
         <Header title="Frequency Calculator" />
 
         <div
-          className="invisible relative top-8 z-1 mx-4"
+          className="invisible relative top-4 z-1 mx-4"
           style={{ viewTransitionName: "frequency-calculator-inner" }}
         />
 

@@ -15,8 +15,8 @@
   src: url("/RobotoMono.ttf");
 }
 
-::view-transition-old(frequency-calculator),
-::view-transition-new(frequency-calculator) {
+::view-transition-old(*),
+::view-transition-new(*) {
   height: 100%;
 }
 
