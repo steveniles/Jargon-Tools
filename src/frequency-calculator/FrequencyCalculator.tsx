@@ -19,9 +19,9 @@ export default function FrequencyCalculator() {
   }
 
   return (
-    <div className="flex h-dvh justify-center overflow-auto bg-radial from-violet-950 to-neutral-950 font-[Roboto] text-violet-50 select-none">
+    <div className="flex h-dvh justify-center bg-radial from-violet-950 to-neutral-950 font-[Roboto] text-violet-50 select-none">
       <title>Jargon Tools - Frequency Calculator</title>
-      <div className="mx-4 mt-4 flex w-full max-w-[801px] flex-col">
+      <div className="flex w-full max-w-[833px] flex-col overflow-auto p-4">
         <Header title="Frequency Calculator" />
 
         <div
@@ -41,7 +41,7 @@ export default function FrequencyCalculator() {
               style={{ viewTransitionName: "frequency-calculator" }}
               value={sourceText}
             />
-            <div className="flex flex-wrap items-center justify-end gap-4 pb-4">
+            <div className="flex flex-wrap items-center justify-end gap-4">
               <Field className="flex items-center gap-2">
                 <Switch
                   checked={ignoreCase}
@@ -87,7 +87,7 @@ export default function FrequencyCalculator() {
             >
               <FrequencyChart data={output} />
             </section>
-            <div className="flex justify-end pb-4">
+            <div className="flex justify-end">
               <Button
                 onClick={() => setShowOutput(false)}
                 className="rounded-lg border-1 border-violet-500 bg-violet-600 px-4 py-2 font-semibold hover:cursor-pointer hover:bg-violet-500 active:bg-violet-500"
