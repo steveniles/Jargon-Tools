@@ -4,7 +4,7 @@ import Card from "./components/Card";
 
 export default function Home() {
   return (
-    <div className="flex h-dvh flex-col items-center overflow-auto bg-radial from-teal-950 to-neutral-950 select-none">
+    <main className="flex h-dvh flex-col items-center overflow-auto bg-radial from-teal-950 to-neutral-950 select-none">
       <section className="flex grow flex-col items-center justify-center gap-16">
         <div className="font-[Glory] text-white text-shadow-lg">
           <div className="text-7xl tracking-tighter sm:text-9xl">
@@ -52,6 +52,6 @@ export default function Home() {
           </div>
         </Transition>
       </footer>
-    </div>
+    </main>
   );
 }
