@@ -1,7 +1,7 @@
 import { Button, Field, Label, Switch, Textarea } from "@headlessui/react";
 import { CalculatorIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-import { Link } from "react-router";
+import Header from "../components/Header";
 import { calculate } from "./calculate";
 import FrequencyChart from "./FrequencyChart";
 
@@ -21,24 +21,8 @@ export default function FrequencyCalculator() {
   return (
     <div className="flex h-dvh justify-center overflow-auto bg-radial from-violet-950 to-neutral-950 font-[Roboto] text-violet-50 select-none">
       <title>Jargon Tools - Frequency Calculator</title>
-      <div className="mx-4 flex w-full max-w-[801px] flex-col">
-        <header className="mt-4 flex justify-between">
-          <Link className="font-[Glory] tracking-tighter" to="/" viewTransition>
-            <span
-              style={{ viewTransitionName: "jargon" }}
-              className="font-light"
-            >
-              Jargon
-            </span>
-            <span
-              style={{ viewTransitionName: "tools" }}
-              className="font-medium"
-            >
-              Tools
-            </span>
-          </Link>
-          <h1 className="font-bold">Frequency Calculator</h1>
-        </header>
+      <div className="mx-4 mt-4 flex w-full max-w-[801px] flex-col">
+        <Header title="Frequency Calculator" />
 
         <div
           className="invisible relative top-8 z-1 mx-4"
