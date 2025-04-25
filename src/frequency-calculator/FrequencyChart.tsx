@@ -11,7 +11,7 @@ export default function FrequencyChart({ data }: { data: [string, number][] }) {
           <span className="text-right">{count}</span>
           <div
             style={{ width: (count * 100) / highestCount + "%" }}
-            className="rounded-xs bg-linear-to-r from-violet-800 via-violet-500 to-violet-200"
+            className="rounded-xs bg-linear-to-r from-purple-800 via-purple-500 to-purple-200"
           ></div>
         </Fragment>
       ))}

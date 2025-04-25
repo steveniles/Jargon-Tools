@@ -4,7 +4,7 @@ import Card from "./components/Card";
 
 export default function Home() {
   return (
-    <main className="flex h-dvh flex-col items-center overflow-auto bg-radial from-teal-950 to-neutral-950 select-none">
+    <main className="flex h-dvh flex-col items-center overflow-auto bg-radial from-indigo-950 to-neutral-950 select-none">
       <section className="flex grow flex-col items-center justify-center gap-16">
         <div className="font-[Glory] text-white text-shadow-lg">
           <div className="text-7xl tracking-tighter sm:text-9xl">
@@ -31,6 +31,12 @@ export default function Home() {
             description="See how many times each letter, number, and character appears in a piece of text"
             href="/frequency-calculator"
             viewTransitionName="frequency-calculator"
+          />
+          <Card
+            title="Prime Factorizer"
+            description="Find the prime factors of a given number"
+            href="/prime-factorizer"
+            viewTransitionName="prime-factorizer"
           />
           <Card
             title="Dimensionizer (Coming Soon)"

@@ -23,3 +23,8 @@
 ::view-transition-group(*) {
   animation-duration: 0.5s;
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
