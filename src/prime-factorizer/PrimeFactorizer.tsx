@@ -19,7 +19,12 @@ export default function PrimeFactorizer() {
             className="invisible relative z-1 mx-4"
             style={{ viewTransitionName: "prime-factorizer-inner" }}
           />
-          <form onSubmit={() => setResults(factorize(target))}>
+          <form
+            onSubmit={(event) => {
+              event.preventDefault();
+              setResults(factorize(target));
+            }}
+          >
             <div
               className="flex h-[132px] gap-4 rounded-lg bg-neutral-950 p-4 outline-1 outline-lime-900 has-invalid:!outline-red-500 has-[input:focus]:outline-lime-500"
               style={{ viewTransitionName: "prime-factorizer" }}
