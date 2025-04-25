@@ -16,7 +16,7 @@ export default function Card({
 
   const contents = (
     <div
-      className="group h-full w-3xs rounded-lg bg-linear-to-r from-neutral-950 to-neutral-900 p-4 font-[Roboto] shadow-lg"
+      className="group h-full max-h-[161px] w-3xs rounded-lg bg-linear-to-r from-neutral-950 to-neutral-900 p-4 font-[Roboto] shadow-lg"
       style={{
         viewTransitionName: isTransitioning ? viewTransitionName : "none",
       }}
