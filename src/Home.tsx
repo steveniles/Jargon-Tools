@@ -25,7 +25,7 @@ export default function Home() {
             a collection of weird web toys
           </div>
         </div>
-        <div className="mx-4 flex flex-col flex-wrap justify-center gap-8 sm:flex-row">
+        <div className="mx-4 flex flex-col sm:flex-wrap justify-center gap-8 sm:flex-row">
           <Card
             title="Frequency Calculator"
             description="See how many times each letter, number, and character appears in a piece of text"
