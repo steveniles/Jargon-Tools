@@ -48,7 +48,7 @@ export default function PrimeFactorizer() {
               />
               <div className="flex flex-col gap-4" hidden={results !== null}>
                 <Button
-                  className="rounded-lg border-1 border-lime-500 px-4 py-2 font-semibold hover:cursor-pointer hover:bg-lime-500 active:bg-lime-500"
+                  className="rounded-lg border-1 border-lime-500 px-4 py-2 font-semibold hover:cursor-pointer hover:bg-lime-600 active:bg-lime-600"
                   onClick={() => {
                     //Change target value to 1 and back to 0, to reset any characters left in the input (e.g. "-", "+", ".")
                     flushSync(() => setTarget(1));
@@ -58,7 +58,7 @@ export default function PrimeFactorizer() {
                   Clear
                 </Button>
                 <Button
-                  className="rounded-lg border-1 border-lime-500 bg-lime-600 px-4 py-2 font-semibold hover:cursor-pointer hover:bg-lime-500 active:bg-lime-500 disabled:cursor-not-allowed disabled:hover:bg-lime-600"
+                  className="rounded-lg border-1 border-lime-500 bg-lime-700 px-4 py-2 font-semibold hover:cursor-pointer hover:bg-lime-600 active:bg-lime-600 disabled:cursor-not-allowed disabled:hover:bg-lime-700"
                   disabled={target < 2}
                   type="submit"
                 >
@@ -70,7 +70,7 @@ export default function PrimeFactorizer() {
                 hidden={results === null}
               >
                 <Button
-                  className="rounded-lg border-1 border-lime-500 bg-lime-600 px-4 py-2 font-semibold hover:cursor-pointer hover:bg-lime-500 active:bg-lime-500 disabled:cursor-not-allowed disabled:hover:bg-lime-600"
+                  className="rounded-lg border-1 border-lime-500 bg-lime-700 px-4 py-2 font-semibold hover:cursor-pointer hover:bg-lime-600 active:bg-lime-600"
                   onClick={() => setResults(null)}
                 >
                   Reset
