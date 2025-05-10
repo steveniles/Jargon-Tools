@@ -32,6 +32,7 @@ export default function PrimeFactorizer() {
               <Input
                 autoFocus
                 className="w-full font-[Roboto_Mono] text-lime-400 outline-none selection:bg-lime-700 selection:text-lime-50 min-[321px]:text-lg min-[339px]:text-xl min-[375px]:text-2xl min-[429px]:text-3xl min-[483px]:text-4xl min-[591px]:text-5xl min-[699px]:text-6xl min-[807px]:text-7xl"
+                inputMode="numeric"
                 max={999999999999999}
                 min={2}
                 onChange={(event) => {
