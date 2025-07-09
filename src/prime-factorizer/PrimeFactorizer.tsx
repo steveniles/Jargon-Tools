@@ -12,9 +12,9 @@ export default function PrimeFactorizer() {
   return (
     <main className="flex h-dvh justify-center bg-radial from-lime-950 to-neutral-950 font-[Roboto] text-lime-50 select-none">
       <title>Jargon Tools - Prime Factorizer</title>
-      <section className="flex w-full max-w-[833px] flex-col gap-4 overflow-auto p-4">
+      <section className="flex w-full flex-col items-center gap-4 overflow-auto p-4">
         <Header title="Prime Factorizer" />
-        <div>
+        <div className="w-full max-w-[801px]">
           <div
             className="invisible relative z-1 mx-4"
             style={{ viewTransitionName: "prime-factorizer-inner" }}
@@ -80,7 +80,7 @@ export default function PrimeFactorizer() {
             </div>
           </form>
         </div>
-        <div className="flex grow flex-col justify-center">
+        <div className="flex w-full max-w-[801px] grow flex-col justify-center">
           <FactorsList factors={results} />
         </div>
       </section>

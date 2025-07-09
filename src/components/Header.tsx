@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export default function Header({ title }: { title: string }) {
   return (
-    <header className="flex justify-between">
+    <header className="grid w-full grid-cols-[1fr_auto_1fr] gap-4">
       <Link className="font-[Glory] tracking-tighter" to="/" viewTransition>
         <span style={{ viewTransitionName: "jargon" }} className="font-light">
           Jargon

@@ -17,11 +17,11 @@ export default function FrequencyCalculator() {
   return (
     <main className="flex h-dvh justify-center bg-radial from-purple-950 to-neutral-950 font-[Roboto] text-purple-50 select-none">
       <title>Jargon Tools - Frequency Calculator</title>
-      <section className="flex w-full max-w-[833px] flex-col gap-4 p-4">
+      <section className="flex w-full flex-col items-center gap-4 p-4">
         <Header title="Frequency Calculator" />
 
         <div
-          className="grow overflow-auto rounded-lg bg-neutral-950 outline-1 outline-purple-900 has-[textarea:focus]:outline-purple-500"
+          className="w-full max-w-[801px] grow overflow-auto rounded-lg bg-neutral-950 outline-1 outline-purple-900 has-[textarea:focus]:outline-purple-500"
           style={{ viewTransitionName: "frequency-calculator" }}
         >
           <div
